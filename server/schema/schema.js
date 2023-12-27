@@ -1,4 +1,4 @@
-const { projects, clients } = require("../sampleData");
+
 // mongoose models
 const Project = require("../models/project");
 const Client = require("../models/client");
