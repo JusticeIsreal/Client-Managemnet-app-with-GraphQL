@@ -10,7 +10,6 @@ function App() {
   return (
     <>
       <ApolloProvider client={client}>
-        {" "}
         <Header />
         <div className="container">
           <Clients />
