@@ -1,5 +1,6 @@
 import React from "react";
 import { gql, useQuery } from "@apollo/client";
+import ClientRow from "../components/ClientRow";
 
 const GET_CLIENTS = gql`
   query getClients {
@@ -20,15 +21,20 @@ function Clients() {
   return (
     <>
       {!loading && !error && (
-        <table>
+        <table className="table table hover mt-3">
           <thead>
             <tr>
               <th>Name</th>
               <th>Email</th>
               <th>Phone</th>
-              <th>Name</th>
+              <th></th>
             </tr>
           </thead>
+          <tbody>
+            {data.allClients.map((client) => (
+              <ClientRow key={client.id} client={client} />
+            ))}
+          </tbody>
         </table>
       )}
     </>
