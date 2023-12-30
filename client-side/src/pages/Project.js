@@ -4,6 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import Spinner from "../components/Spinner";
 import ClientInfo from "../components/ClientInfo";
+import DeleteProjectBtn from "../components/DeleteProjectBtn";
 
 function Project() {
   const { id } = useParams();
@@ -24,6 +25,7 @@ function Project() {
           <p className="lead">{data?.singleProject.status}</p>
 
           <ClientInfo client={data?.singleProject.client} />
+          <DeleteProjectBtn projectId={id} />
         </div>
       )}
     </>
