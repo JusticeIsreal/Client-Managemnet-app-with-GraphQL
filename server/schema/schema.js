@@ -120,8 +120,7 @@ const mutation = new GraphQLObjectType({
       },
     },
 
-    // Add Projects
-
+    // Add a project
     addProject: {
       type: ProjectType,
       args: {
@@ -138,7 +137,7 @@ const mutation = new GraphQLObjectType({
           }),
           defaultValue: "Not Started",
         },
-        clientId: { type: GraphQLNonNull(GraphQLString) },
+        clientId: { type: GraphQLNonNull(GraphQLID) },
       },
       resolve(parent, args) {
         const project = new Project({
@@ -147,6 +146,7 @@ const mutation = new GraphQLObjectType({
           status: args.status,
           clientId: args.clientId,
         });
+
         return project.save();
       },
     },
