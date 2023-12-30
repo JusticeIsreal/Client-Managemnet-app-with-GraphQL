@@ -158,8 +158,6 @@ Utilized several React hooks for efficient state management and dynamic behavior
 # Add Client Modal
 <img width='100%' src='https://res.cloudinary.com/isreal/image/upload/v1703923730/Screenshot_2023-12-30_at_03.07.33_gbx0bc.png' />
 
-# Add Project Modal
-<img width='100%' src='https://res.cloudinary.com/isreal/image/upload/v1703923730/Screenshot_2023-12-21_at_12.41.04_gwofq1.png' />
 
 # Project Details / Edit / Delete page
 <img width='100%' src='https://res.cloudinary.com/isreal/image/upload/v1703924353/Screenshot_2023-12-30_at_03.08.10_gozmmv.png' />
