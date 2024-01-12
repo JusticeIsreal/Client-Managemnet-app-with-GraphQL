@@ -21,5 +21,5 @@ const DELETE_CLIENT = gql`
     }
   }
 `;
-
+// gjgh
 export { DELETE_CLIENT, ADD_CLIENT };
